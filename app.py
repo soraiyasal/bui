@@ -7,7 +7,22 @@ import re
 allowed_baitul_ilm = [
     "Central London", "West London", "East London", "North London", "Northwest", "Reading", "South London",
     "Birmingham", "Leicester", "Dublin", "BAI Online (Saturday)", "BAI Online (Sunday)", "Aga Khan Centre",
-    "Leeds / Bradford", "Manchester", "Farsi Online BAI 1 - GC"
+    "Leeds / Bradford", "Manchester",     "Farsi Online BAI 1 - GC",
+    "Farsi Online BAI 2 - GC",
+    "Farsi Online BAI 1 - GC",
+    "Farsi Online BAI 4 - GC",
+    "Frankfurt",
+    "Essen",
+    "Frankfurt",
+    "Farsi Online BAI 4 - GC",
+    "Frankfurt",
+    "Farsi Online BAI 1 - GC",
+    "Munich",
+    "Frankfurt",
+    "Farsi Online BAI 3 - GC",
+    "Farsi Online BAI 2 - GC",
+    "Hamburg",
+    "Berlin"
 ]
 
 # Define specific rows to exclude based on Baitul Ilm, Area, and Class Name
