@@ -4,35 +4,93 @@ from bs4 import BeautifulSoup
 import re
 
 # Define the allowed Baitul Ilm locations for filtering
+# allowed_baitul_ilm = [
+#     "Central London", "West London", "East London", "North London", "Northwest", "Reading", "South London",
+#     "Birmingham", "Leicester", "Dublin", "BAI Online (Saturday)", "BAI Online (Sunday)", "Aga Khan Centre",
+#     "Leeds / Bradford", "Manchester",     "Farsi Online BAI 1 - GC",
+#     "Farsi Online BAI 2 - GC",
+#     "Farsi Online BAI 1 - GC",
+#     "Farsi Online BAI 4 - GC",
+#     "Frankfurt",
+#     "Essen",
+#     "Frankfurt",
+#     "Farsi Online BAI 4 - GC",
+#     "Frankfurt",
+#     "Farsi Online BAI 1 - GC",
+#     "Munich",
+#     "Frankfurt",
+#     "Farsi Online BAI 3 - GC",
+#     "Farsi Online BAI 2 - GC",
+#     "Hamburg",
+#     "Berlin"
+# ]
+
 allowed_baitul_ilm = [
-    "Central London", "West London", "East London", "North London", "Northwest", "Reading", "South London",
-    "Birmingham", "Leicester", "Dublin", "BAI Online (Saturday)", "BAI Online (Sunday)", "Aga Khan Centre",
-    "Leeds / Bradford", "Manchester",     "Farsi Online BAI 1 - GC",
-    "Farsi Online BAI 2 - GC",
-    "Farsi Online BAI 1 - GC",
-    "Farsi Online BAI 4 - GC",
-    "Frankfurt",
-    "Essen",
-    "Frankfurt",
-    "Farsi Online BAI 4 - GC",
-    "Frankfurt",
-    "Farsi Online BAI 1 - GC",
-    "Munich",
-    "Frankfurt",
-    "Farsi Online BAI 3 - GC",
-    "Farsi Online BAI 2 - GC",
-    "Hamburg",
-    "Berlin"
+    "Online Friday",
+    "West London",
+    "Central London",
+    "North London",
+    "Northwest London",
+    "East London",
+    "Online Saturday",
+    "South London",
+    "Birmingham",
+    "Leeds",
+    "Leicester",
+    "Manchester",
+    "Reading",
+    "Online Sunday",
+    "AKC"
 ]
 
+
 # Define specific rows to exclude based on Baitul Ilm, Area, and Class Name
+# excluded_rows = [
+#     ("Aga Khan Centre", "London", "Secondary 1"),
+#     ("Central London", "London", "Secondary 2"),
+#     ("Dublin", "Region", "Secondary 1"),
+#     ("Reading", "Region", "Secondary 3"),
+#     ("Reading", "Region", "Secondary 4")
+# ]
+
 excluded_rows = [
-    ("Aga Khan Centre", "London", "Secondary 1"),
-    ("Central London", "London", "Secondary 2"),
-    ("Dublin", "Region", "Secondary 1"),
+    ("Online Friday", "Region", "Secondary 3"),
+    ("West London", "London", "Secondary 1"),
+    ("West London", "London", "Secondary 2"),
+    ("West London", "London", "Secondary 3"),
+    ("West London", "London", "Secondary 4"),
+    ("Central London", "London", "Secondary 1"),
+    ("North London", "London", "Secondary 1"),
+    ("Northwest London", "London", "Secondary 1"),
+    ("Northwest London", "London", "Secondary 2"),
+    ("East London", "London", "Secondary 1"),
+    ("East London", "London", "Secondary 2"),
+    ("Online Saturday", "Region", "Secondary 1"),
+    ("Online Saturday", "Region", "Secondary 2"),
+    ("Online Saturday", "Region", "Secondary 3"),
+    ("Online Saturday", "Region", "Secondary 4"),
+    ("Online Saturday", "Region", "Secondary 5"),
+    ("Online Saturday", "Region", "Secondary 6"),
+    ("South London", "London", "Secondary 1"),
+    ("Birmingham", "Region", "Secondary 1"),
+    ("Birmingham", "Region", "Secondary 2"),
+    ("Leeds", "Region", "Secondary 1"),
+    ("Leicester", "Region", "Secondary 1"),
+    ("Leicester", "Region", "Secondary 2"),
+    ("Manchester", "Region", "Secondary 1"),
+    ("Manchester", "Region", "Secondary 2"),
     ("Reading", "Region", "Secondary 3"),
-    ("Reading", "Region", "Secondary 4")
+    ("Reading", "Region", "Secondary 4"),
+    ("Online Sunday", "Region", "Secondary 1"),
+    ("AKC", "London", "Secondary 1"),
+    ("AKC", "London", "Secondary 2"),
+    ("AKC", "London", "Secondary 3"),
+    ("AKC", "London", "Secondary 3B"),
+    ("AKC", "London", "Secondary 4"),
+    ("AKC", "London", "Secondary 5"),
+    ("AKC", "London", "Secondary 6")
 ]
+ 
 
 # Helper function to calculate attendance and rates for any number of weeks
 def attendance_per_week(chd_data, total_students):
