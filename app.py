@@ -35,7 +35,7 @@ allowed_baitul_ilm = [
     "BAI Online (Saturday)",
     "South London",
     "Birmingham",
-    "Leeds/Bradford",
+    "Leeds / Bradford",
     "Leicester",
     "Manchester",
     "Reading",
