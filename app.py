@@ -26,20 +26,20 @@ import re
 # ]
 
 allowed_baitul_ilm = [
-    "Online Friday",
+    "Dublin",
     "West London",
     "Central London",
     "North London",
     "Northwest London",
     "East London",
-    "Online Saturday",
+    "BAI Online (Saturday)",
     "South London",
     "Birmingham",
     "Leeds",
     "Leicester",
     "Manchester",
     "Reading",
-    "Online Sunday",
+    "BAI Online (Sunday)",
     "Aga Khan Centre"
 ]
 
