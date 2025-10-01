@@ -40,7 +40,7 @@ allowed_baitul_ilm = [
     "Manchester",
     "Reading",
     "Online Sunday",
-    "AKC"
+    "Aga Khan Centre"
 ]
 
 
