@@ -30,7 +30,7 @@ allowed_baitul_ilm = [
     "West London",
     "Central London",
     "North London",
-    "Northwest London",
+    "Northwest",
     "East London",
     "BAI Online (Saturday)",
     "South London",
