@@ -54,41 +54,7 @@ allowed_baitul_ilm = [
 # ]
 
 excluded_rows = [
-    ("Online Friday", "Region", "Secondary 3"),
-    ("West London", "London", "Secondary 1"),
-    ("West London", "London", "Secondary 2"),
-    ("West London", "London", "Secondary 3"),
-    ("West London", "London", "Secondary 4"),
-    ("Central London", "London", "Secondary 1"),
-    ("North London", "London", "Secondary 1"),
-    ("Northwest London", "London", "Secondary 1"),
-    ("Northwest London", "London", "Secondary 2"),
-    ("East London", "London", "Secondary 1"),
-    ("East London", "London", "Secondary 2"),
-    ("Online Saturday", "Region", "Secondary 1"),
-    ("Online Saturday", "Region", "Secondary 2"),
-    ("Online Saturday", "Region", "Secondary 3"),
-    ("Online Saturday", "Region", "Secondary 4"),
-    ("Online Saturday", "Region", "Secondary 5"),
-    ("Online Saturday", "Region", "Secondary 6"),
-    ("South London", "London", "Secondary 1"),
-    ("Birmingham", "Region", "Secondary 1"),
-    ("Birmingham", "Region", "Secondary 2"),
-    ("Leeds", "Region", "Secondary 1"),
-    ("Leicester", "Region", "Secondary 1"),
-    ("Leicester", "Region", "Secondary 2"),
-    ("Manchester", "Region", "Secondary 1"),
-    ("Manchester", "Region", "Secondary 2"),
-    ("Reading", "Region", "Secondary 3"),
-    ("Reading", "Region", "Secondary 4"),
-    ("Online Sunday", "Region", "Secondary 1"),
-    ("AKC", "London", "Secondary 1"),
-    ("AKC", "London", "Secondary 2"),
-    ("AKC", "London", "Secondary 3"),
-    ("AKC", "London", "Secondary 3B"),
-    ("AKC", "London", "Secondary 4"),
-    ("AKC", "London", "Secondary 5"),
-    ("AKC", "London", "Secondary 6")
+
 ]
  
 
